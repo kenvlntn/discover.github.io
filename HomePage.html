@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Discovering the Real Me</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <section class="header">
+            <nav>
+                <a href="HomePage.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="HomePage.html">HOME</a></li>
+                        <li><a href="AboutMe.html">ABOUT ME</a></li>
+                        <li><a href="poem.html">POEM</a></li>
+                        <li><a href="tiktok.html">MY TIKTOK</a></li>
+                        <li><a href="playlist.html">MY PLAYLIST</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+<div class="text-box">
+    <h1>
+        Hi! I am Karsten!
+    </h1>
+    <p>
+        I am a curious explorer of life, driven by a thirst for knowledge and a love for connecting with others.
+        <br> Guided by the values of empathy and authenticity.
+        <br> So join me as we get to know interesting things about me. Let's go!
+    </p>
+</div>
+
+        </section>
+<section class="directs">
+    <h1>Things to know about me:</h1>
+    <p>tite</p>
+
+    <div class="container">
+    <div class="body">
+        <div class="card">
+            <a href="AboutMe.html"><img class="card1" alt="100%x280" src="images/card1.jpg"></a>
+            <div class = "directs-col">
+                <h3>ABOUT ME!</h3>
+                <p1>This contains my basic personal information and interesting things about me!</p1>
+            </div>
+        </div>
+        <div class="card">
+            <a href="poem.html"><img class="card2" alt="May Pogi" src="images/card2.jpg"></a>
+            <div class = "directs-col">
+                <h3>POEM</h3>
+                <p1>This contains the poem that inspires me in life.</p1>
+            </div>
+        </div>
+        <div class="card">
+            <a href="tiktok.html"><img class="card3" alt="May Pogi" src="images/card3.jpg"></a>
+            <div class = "directs-col">
+                <h3>MY TIKTOK</h3>
+            <p1>This contains my TikTok account and some of the videos I have that you may find funny, <i>kilig to the bones</i> video, and more!</p1>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card4" alt="May Pogi" src="images/card4.png">
+            <div class = "directs-col">
+                <h3>MY PLAYLIST</h3>
+                <p1>Wanna know the taste of my music taste? Well, this contains the playlist I'm listening to at any mood. Maybe you can find your new favorite songs here.</p1>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+        <!--JavaScript for Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    </body>
+</html>

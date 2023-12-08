@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample.css">
+    <title>Playlist Showcase</title>
+</head>
+<body>
+    <div class="playlist-container">
+        <h1>My Playlist</h1>
+        <ul class="playlist">
+            <li class="song" data-src="song1.mp3">Song 1</li>
+            <li class="song" data-src="song2.mp3">Song 2</li>
+            <li class="song" data-src="song3.mp3">Song 3</li>
+            <!-- Add more songs as needed -->
+        </ul>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const playlist = document.querySelectorAll(".song");
+
+    playlist.forEach(song => {
+        song.addEventListener("click", function() {
+            const audioSrc = this.getAttribute("data-src");
+            playAudio(audioSrc);
+        });
+    });
+
+    function playAudio(src) {
+        const audio = new Audio(src);
+        audio.play();
+    }
+});
+
+    </script>
+</body>
+</html>

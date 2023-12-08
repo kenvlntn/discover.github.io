@@ -1,0 +1,810 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aboutmeheader.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.about-me{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-pic{
+    position: relative;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black;
+}
+.about-pic img{
+    width: 100%;
+    display: block;
+}
+.about-col h2{
+    padding-top: 0;
+    font-size: 40px;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 20px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+.family {
+    text-align: center;
+    display:inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-top: 100px;
+}
+.family h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.family-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.family-member {
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    display:inline-flexbox;
+}
+
+.family-member img {
+    width: 300px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    justify-content: center;
+    height: auto;
+    box-shadow: 5px 5px 20px black;
+}
+.family-member p{
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 3px;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
+.container h1 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.container p{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: inline-flex;
+}
+.section1 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.section1 p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.section1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/valorant.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.section1:hover p {
+    opacity: 0;
+}
+.section1:hover::after {
+    content: "TRIVIA: My favorite video game when I was a kid is Grand Theft Auto: San Andreas. It was my childhood game and everytime I play it, it gives me nostalgia.";
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.section2 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+.section2 p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.section2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/basketball.png');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.section2:hover p {
+    opacity: 0;
+}
+.section2:hover::after {
+    content: "TRIVIA: I used to be a basketball varsity when I was Grade 7 and Grade 8. (wala kasi silang choice haha). We won 3rd place in a league composing of private schools around CALABARZON.";
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.section3 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+.section3 p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.section3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/edit.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.section3:hover p {
+    opacity: 0;
+}
+.section3:hover::after {
+    content: "TRIVIA: I used to have a YouTube channel from 2020-2022 and it had 500,000+ subscribers. The channel had a total of 250 million views. Unfortunately, the channel is gone due to confidential reasons.";
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+.section4 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+.section4 p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.section4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/sing.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.section4:hover p {
+    opacity: 0;
+}
+.section4:hover::after {
+    content: "TRIVIA: I used to join singing contests when I was a kid. I'm getting awards but I did not win any first placer in any contests that I joined.";
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 20px;
+    z-index: 1;
+}
+.fav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.fav-container h1 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.fav-container p{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.fav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav-section {
+    display: inline-flex;
+}
+.fav-section1 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section1 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section1:hover {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.fav-section1:hover h2 {
+    opacity: 0;
+}
+.fav-section1:hover::after {
+    content: "Carbonara, Adobo, Pares sa Kanto, and Sisig";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.fav-section2 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section2 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/lilnasx.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.fav-section2:hover h2 {
+    opacity: 0;
+}
+.fav-section2:hover::after {
+    content: "That's What I Want by Lil Nas X";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+.fav-section3 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section3 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/weeknd.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.fav-section3:hover h2 {
+    opacity: 0;
+}
+.fav-section3:hover::after {
+    content: "The Weeknd";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+}
+.fav-section4 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section4 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section4:hover {
+    background-color: pink;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.fav-section4:hover h2 {
+    opacity: 0;
+}
+.fav-section4:hover::after {
+    content: "Pink";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 60px;
+}
+.fav-section5 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section5 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/valorant.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.fav-section5:hover h2 {
+    opacity: 0;
+}
+.fav-section5:hover::after {
+    content: "Playing Video Games";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+}
+.fav-section6 {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 100px;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+.fav-section6 h2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: opacity 0.3s ease;
+}
+.fav-section6:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url('images/japan.jpg');
+    background-position: center; 
+    background-size: cover;
+    color: white;
+}
+.fav-section6:hover h2 {
+    opacity: 0; 
+}
+.fav-section6:hover::after {
+    content: "Japan"; 
+    display: block;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px; 
+    text-align: center; 
+    font-size: 35px;
+}
+.fav-section h2 {
+    margin-bottom: 10px;
+}
+.gf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+.gf-container h1{
+    margin-bottom: 40px;
+} 
+h1 {
+    margin-bottom: 20px;
+}
+
+.gf-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 50px;
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px black;
+}
+
+.text-container {
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.image-gf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.jami{
+    padding-bottom: 50px;
+}
+.image-gf img {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px black;
+    transition: transform 0.3s ease-in-out; 
+    margin-bottom: 20px;
+}
+
+.image-gf img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+.image-gf1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.image-gf1 img {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px black;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.image-gf1 img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.social-media-container {
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.social-media-link img {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+.social-media-link img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f436d4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-links ul{
+    padding: 30px;
+}
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
